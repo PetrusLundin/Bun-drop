@@ -26,6 +26,8 @@ export const AppContextProvider = (props) => {
   let drinks = foods.slice(14, 19)
   let fries = foods.slice(19, 22)
   let desserts = foods.slice(22,26)
+  
+  
   const getTotalPrice = () => {
     let totalPrice = 0;
     for (const item in cartItems) {
