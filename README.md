@@ -29,6 +29,7 @@ Structure your css, I just hammered away and created classes right and left, it 
 Also dabbled on a phone version of the app, so some code is only for that which makes it look even more unorganized. So the first 450 lines of code in css file is only for smaller screens. And alot of it is basically copy paste so it is or can be ignored. 
 
 ## Improvements
+
 Account possibility
 
 Search in men
@@ -40,6 +41,10 @@ Cart keep items if page reload
 Map for choosing address
 
 Overall design, looks abit cheap
+
+## Figma
+
+https://www.figma.com/file/oSJVe21vKJRsVaZIjWS0DA/Bun-drop?type=design&node-id=1%3A184&mode=design&t=MECam0zYTxOuLERU-1
 
 # Thank you
 
