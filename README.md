@@ -39,6 +39,8 @@ Cart keep items if page reload
 
 Map for choosing address
 
+Overall design, looks abit cheap
+
 # Thank you
 
 
