@@ -7,7 +7,7 @@ export const AppContextProvider = (props) => {
   const [cartItems, setOrderItems] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:3000/foods")
+    fetch("http://localhost:3001/foods")
       .then((response) => response.json())
       .then((data) => {
         setfoods(data);
