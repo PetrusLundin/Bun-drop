@@ -1,0 +1,1028 @@
+:root {
+  --primary: #871d9d;
+  --secondary: #ffff00;
+  --tertiary: #142b85;
+  font-family: "Raleway", sans-serif;
+  min-height: 100vh;
+  color: var(--secondary);
+}
+body {
+  background-image: linear-gradient(
+    320deg,
+    rgba(135, 29, 157, 0.7) 0%,
+    #142b85 100%
+  );
+
+  scrollbar-color: #142b85 transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  /*--------------navbar----------------*/
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo img {
+    height: 10rem;
+  }
+
+  .navlinks {
+    position: relative;
+    display: flex;
+    padding-left: 2%;
+    padding-right: 3%;
+    margin-top: -2rem;
+    overflow-x: scroll;
+    background-color: #ffff00;
+    gap: 4.7rem;
+    border: 0.2rem solid;
+  }
+
+  .navbar a {
+    font-weight: bold;
+    color: var(--tertiary);
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .navbar a:hover {
+    text-decoration: underline overline;
+    text-decoration-thickness: 10px;
+  }
+
+  .navbar a.active {
+    text-decoration: underline overline;
+    text-decoration-thickness: 10px;
+  }
+
+  /*--------------Home Page------------------*/
+
+  .home-container {
+    display: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-info {
+    background-image: url(images/Burger-drop.webp);
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 1rem;
+    border: solid 0.2rem --secondary;
+    border-radius: 2%;
+    box-shadow: --secondary 0px 5px 15px;
+  }
+
+  .home-info h1,
+  h3 {
+    margin: 0.5rem;
+    width: 90%;
+    align-self: center;
+    text-align: center;
+  }
+
+  .burger-drop {
+    width: 90%;
+    display: flex;
+  }
+
+  /*--------------- Meny Page ---------------*/
+
+  .menu-titles {
+    font-size: 3rem;
+    width: 100%;
+    border-bottom: 0.3rem solid var(--secondary);
+  }
+
+  /*-------------Card-------------*/
+
+  .item-card {
+    perspective: 500rem;
+    position: relative;
+    width: 11rem;
+    height: 12rem;
+    gap: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+
+  .item-image {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 100%;
+    height: 9rem;
+  }
+
+  .front-of-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  .item-card:hover {
+    transform: rotateY(-180deg);
+  }
+
+  .back-of-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  }
+
+  .card-arrow {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+  }
+  .item-price {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .add-item {
+    border-radius: 5px;
+  }
+
+  .item-info {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .item-name {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .back-card-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-flow: row;
+  }
+
+  .back-card-wrap button {
+    background: green;
+    border-color: black;
+    font-size: 1rem;
+  }
+
+  /*-------Order Page-----------*/
+
+  .order-container {
+    position: sticky;
+    bottom: 0;
+  }
+  .current-order {
+    height: 5rem;
+    background: var(--tertiary);
+    box-shadow: inset 15px -15px 15px -10px black,
+      inset -15px 15px 15px -10px black;
+    overflow-y: scroll;
+    transition: 0.5s;
+  }
+
+  .card-wrap {
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .current-order:hover {
+    height: 15rem;
+  }
+
+  .order-titles {
+    position: sticky;
+    top: 0px;
+    background: black;
+    border-bottom: solid 0.2rem var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .order-titles-desktop {
+    display: none;
+  }
+
+  .container-titles-desktop {
+    display: none;
+  }
+
+  .order-titles h1,
+  h2 {
+    margin: 0;
+  }
+
+  .cashout {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+
+  .order-items {
+    font-size: 1.2rem;
+  }
+
+  .order-item {
+    margin: 0.4rem;
+    width: 95%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 0.1rem var(--secondary);
+  }
+
+  .order-item div {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  /*-----------Cashout Page------*/
+
+  .cashout-container {
+    display: flex;
+    flex-flow: column;
+    margin-top: 1rem;
+  }
+
+  .cashout-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cashout-title p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 4rem;
+  }
+
+  .cashout-items {
+    max-height: 15rem;
+    overflow-y: scroll;
+    border: solid 0.2rem #fdbb2d;
+    border-radius: 10px;
+    box-shadow: #fdbb2d 0px 5px 15px;
+  }
+
+  .cashout-info {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .cashout-info p {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .space-div {
+    height: 0.2rem;
+    background: var(--tertiary);
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .your-order {
+    width: 20rem;
+    text-align: center;
+  }
+
+  .address-info {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    gap: 1rem;
+  }
+
+  .address-info label {
+    display: flex;
+    align-self: center;
+  }
+
+  .address-info p {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .address-info input {
+    align-self: center;
+    font-size: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: solid var(--secondary);
+    width: 15rem;
+  }
+  .pay-button {
+    width: 60%;
+    display: flex;
+    border: solid 0.1rem black;
+    align-self: center;
+    border-radius: 25px;
+    height: 2rem;
+    gap: 1rem;
+  }
+
+  .pay-img {
+    margin-right: 2rem;
+    width: 70%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+
+  .confirm-button {
+    display: flex;
+    background: green;
+    border-radius: 20px;
+    border-width: 10px;
+    font-size: 2rem;
+    align-self: center;
+  }
+
+  .confirm-button:disabled {
+    background-color: gray;
+  }
+
+  .empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*-----Order Confirmation-----*/
+
+  .order-confirm-container {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .order-confirm-container img {
+    width: 70%;
+  }
+
+  /*-----------Drone Page--------*/
+
+  .obi-burger {
+    display: flex;
+    justify-content: center;
+    height: 22.5rem;
+  }
+
+  .obi-burger img {
+    justify-self: center;
+    height: 22.5rem;
+    margin-top: 2rem;
+  }
+
+  /*-----------FAQ Page---------*/
+
+  .spanish-inquisition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-fix {
+    display: flex;
+    align-items: center;
+    width: 22.5rem;
+    margin-top: 2rem;
+  }
+
+  .spanish-info {
+    font-weight: bold;
+    text-align: center;
+  }
+}
+/*-----------Desktop---------*/
+
+@media only screen and (min-width: 768px) {
+  /*--------------navbar----------------*/
+
+  main {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .navlinks {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-left: -0.62rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    height: 3rem;
+    justify-content: space-around;
+    gap: 4.7rem;
+    color: #fdbb2d;
+    z-index: 101;
+  }
+
+  .navbar a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .navbar a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+  }
+
+  .navbar a.active {
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    z-index: 1001;
+  }
+
+  .logo img {
+    height: 10rem;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+  }
+
+  /*--------------Home Page------------------*/
+
+  .home-container {
+    display: flex;
+    align-content: flex-start;
+    margin-top: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .home-cont {
+    background-size: 100% 100%;
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: normal;
+    justify-content: center;
+    border-radius: 60px;
+    padding: 1rem;
+    box-shadow: #ffff00 0px 5px 15px;
+  }
+
+  .cont-1 {
+    background-image: url(images/Retro\ Galaxy\ Soda.webp);
+    width: 25%;
+    height: 30rem;
+    align-items: center;
+  }
+
+  .cont-2 {
+    background-image: url(images/Synthwave\ Strawberry\ Sundae.webp);
+    align-items: end;
+    width: 40%;
+    height: 30rem;
+  }
+
+  .cont-3 {
+    background-image: url(images/Delivery.webp);
+    width: 25%;
+    height: 30rem;
+    align-items: end;
+  }
+  .cont-4 {
+    background-image: url(images/Burger-drop.webp);
+    width: 40%;
+    height: 45rem;
+    align-items: end;
+  }
+
+  .cont-5 {
+    background-image: url(images/Electric\ Salsa\ Sizzle.webp);
+    width: 40%;
+    height: 18rem;
+    align-items: end;
+  }
+
+  .cont-6 {
+    background-image: url(images/Electric\ Blueberry\ Fusion.webp);
+    width: 40%;
+    height: 18rem;
+    align-items: end;
+  }
+  .cont-7 {
+    background-image: url(images/Electric\ Pear\ Crisp.webp);
+    width: 40%;
+    height: 18rem;
+    align-items: end;
+  }
+
+  .electric-trio {
+    gap: 2rem;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: 45rem;
+    width: 50%;
+    justify-content: center;
+    writing-mode: vertical-lr;
+  }
+
+  .trio-text {
+    text-orientation: upright;
+    border-left: solid #142b85;
+    border-top: solid #142b85;
+    border-bottom: solid #142b85;
+    font-family: "Arial", sans-serif; /* Use a web-safe font as a base */
+    color: #ffff00; /* Bright neon yellow */
+    text-shadow: 0 0 5px #ffff00, /* Outer glow */ 0 0 10px #ffff00,
+      /* More pronounced glow */ 0 0 20px #ffff00,
+      /* Even more pronounced glow */ 0 0 40px #ffa500,
+      /* A hint of orange to add depth */ 0 0 80px #ffa500; /* Deep orange outer glow for contrast */
+    font-size: 2em; /* Adjust size to your preference */
+    font-weight: bold; /* Make the text bold */
+  }
+
+  .home-info h1,
+  h3 {
+    margin: 0.5rem;
+    align-self: center;
+    text-align: center;
+  }
+
+  .burger-drop {
+    width: 70%;
+    display: flex;
+  }
+
+  /*--------------- Menu Page ---------------*/
+
+  .main-container {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .menu-titles {
+    font-size: 3rem;
+    border-bottom: 0.3rem solid;
+  }
+
+  /*-------------Card-------------*/
+
+  .item-card {
+    perspective: 500rem;
+    position: relative;
+    width: 15rem;
+    height: 17rem;
+    gap: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+
+  .item-image {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 100%;
+    height: 14rem;
+  }
+
+  .front-of-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  .item-card:hover {
+    transform: rotateY(-180deg);
+  }
+
+  .back-of-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  }
+
+  .card-arrow {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+  }
+  .item-price {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .add-item {
+    border-radius: 5px;
+  }
+
+  .item-info {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .item-name {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .back-card-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-flow: row;
+  }
+
+  .back-card-wrap button {
+    background: green;
+    border: solid 0.1rem black;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  /*-------Order Page-----------*/
+
+  .order-main {
+    display: flex;
+    flex-flow: row;
+    gap: 4rem;
+  }
+
+  .menu-container {
+    width: 62%;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .order-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6.4rem;
+  }
+
+  .current-order {
+    max-height: 60%;
+    position: fixed;
+    top: 17rem;
+    right: 10%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    scrollbar-width: thin;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: inset rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 1rem;
+    z-index: 5000;
+  }
+
+  .card-wrap {
+    gap: 2rem;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .container-titles-desktop {
+    width: 23rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid --secondary;
+  }
+
+  .order-titles-desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    justify-content: space-around;
+    position: sticky;
+    cursor: pointer;
+    bottom: -17px;
+    background: var(--tertiary);
+    color: var(--secondary);
+  }
+
+  .order-titles {
+    width: 100%;
+    top: 0px;
+    background: transparent;
+    border-bottom: solid 0.2rem --secondary;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .order-titles h1,
+  h2 {
+    margin: 0;
+  }
+
+  .cashout {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-right: 1rem;
+    color: green;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: inherit;
+  }
+
+  .order-items {
+    font-size: 1.2rem;
+  }
+
+  .order-item {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 0.1rem #ffff00;
+  }
+
+  .item-cart-name {
+    display: flex;
+    gap: 0.5rem;
+    width: 40%;
+    align-items: center;
+  }
+
+  .trash-can {
+    cursor: pointer;
+  }
+
+  /*-----------Cashout Page------*/
+
+  .cashout-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cashout-wrap {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    display: flex;
+    gap: 20rem;
+    flex-flow: row-reverse;
+    justify-content: center;
+  }
+
+  .cashout-title p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 4rem;
+  }
+
+  .cashout-items {
+    padding: 1.5rem;
+    max-height: 15rem;
+    min-height: 30rem;
+    overflow-y: scroll;
+    border: solid 0.2rem #142b85;
+    border-radius: 10px;
+    box-shadow: #142b85 0px 5px 15px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .cashout-info {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .cashout-info p {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .space-div {
+    display: none;
+    height: 0.2rem;
+    background: var(--secondary);
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .your-order {
+    width: 30rem;
+    text-align: center;
+  }
+
+  .address-info {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    width: 30rem;
+  }
+
+  .address-info p {
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .address-info input {
+    align-self: center;
+    font-size: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: solid #ffff00;
+    width: 100%;
+    color: #ffff00;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+
+  .pay-button {
+    width: 60%;
+    display: flex;
+    border: solid 0.1rem #142b85;
+    background-color: #871d9d;
+    align-self: center;
+    border-radius: 25px;
+    height: 3rem;
+    gap: 1rem;
+  }
+
+  .pay-img {
+    width: 70%;
+    margin-right: 2rem;
+  }
+
+  .confirm-button {
+    margin-top: 2rem;
+    align-self: center;
+    width: 50%;
+    background: green;
+    border-radius: 20px;
+    font-size: 2rem;
+  }
+
+  .confirm-button:disabled {
+    background-color: gray;
+  }
+
+  .empty-cart {
+    background-image: url(images/EmptyCart.webp);
+    background-size: 100% 100%;
+    align-self: center;
+    width: 70%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cart-cursor {
+    cursor: pointer;
+  }
+
+  /*-----Order Confirmation-----*/
+
+  .order-confirm-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .order-confirm-container img {
+    width: 30%;
+  }
+
+  /*-----------Drone Page--------*/
+  .obi-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .obi-burger img {
+    height: 80%;
+  }
+
+  /*-----------FAQ Page---------*/
+
+  .spanish-inquisition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-fix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+  }
+
+  .spanish-info {
+    font-weight: bold;
+  }
+}

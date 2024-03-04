@@ -1,0 +1,187 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Neon Breeze Delight",
+      "info": "A refreshing combination of grilled shrimp, pineapple salsa, and tropical aioli on a brioche bun.",
+      "price": 12,
+      "image": "/images/Neon Breeze Delight.webp"
+    },
+    {
+      "id": 2,
+      "name": "Retro Sunset Bliss",
+      "info": "Enjoy the flavors of a sunset with grilled chorizo, avocado, and chipotle mayo on a ciabatta roll.",
+      "price": 11,
+      "image": "/images/Retro Sunset Bliss.webp"
+    },
+    {
+      "id": 3,
+      "name": "Electric Salsa Sizzle",
+      "info": "Spicy and savory! Jalapeño-infused beef patty, pepper jack cheese, and mango salsa on a pretzel bun.",
+      "price": 10,
+      "image": "/images/Electric Salsa Sizzle.webp"
+    },
+    {
+      "id": 4,
+      "name": "Synthwave Thunder",
+      "info": "Feel the heat with jerk-seasoned chicken, grilled pineapple, and cilantro-lime mayo on a Hawaiian roll.",
+      "price": 11,
+      "image": "/images/Synthwave Thunder.webp"
+    },
+    {
+      "id": 5,
+      "name": "Radical Heatwave",
+      "info": "Turn up the heat with cajun-spiced beef, pepper jack cheese, jalapeños, and sriracha mayo on a sesame seed bun.",
+      "price": 10,
+      "image": "/images/Radical HeatWave.webp"
+    },
+    {
+      "id": 6,
+      "name": "Cuban Fusion Flash",
+      "info": "A Latin twist! Pulled pork, ham, Swiss cheese, pickles, and mustard on a pressed brioche bun.",
+      "price": 13,
+      "image": "/images/Cuban Fusion Flash.webp"
+    },
+    {
+      "id": 7,
+      "name": "Mango Tango Groove",
+      "info": "Savor the sweetness of mango chutney, bacon, and smoked gouda on a sweet potato bun.",
+      "price": 12,
+      "image": "/images/Mango Tango Groove.webp"
+    },
+    {
+      "id": 8,
+      "name": "Coconut Retro Bliss",
+      "info": "Escape to the tropics with coconut-crusted chicken, pineapple slaw, and lime mayo on a coconut bun.",
+      "price": 12,
+      "image": "/images/Coconut Retro Bliss.webp"
+    },
+    {
+      "id": 9,
+      "name": "Disco Funky Fusion",
+      "info": "Disco your way to the '80s with this double Angus beef, truffle aioli, arugula, and tomato on a hip funky bun.",
+      "price": 18,
+      "image": "/images/Disco Funk Fusion.webp"
+    },
+    {
+      "id": 10,
+      "name": "Vibrant Veggie Fiesta",
+      "info": "For the veggie lovers! Black bean patty, avocado, salsa, and cilantro-lime dressing on a whole grain bun.",
+      "price": 9,
+      "image": "/images/Vibrant Veggie Fiesta.webp"
+    },
+    {
+      "id": 11,
+      "name": "Palms & Pineapple Serenade",
+      "info": "Tropical paradise in every bite! Grilled chicken, ham, pineapple, and teriyaki mayo on a Hawaiian sweet roll.",
+      "price": 11,
+      "image": "/images/Palms & Pineapple Serenade.webp"
+    },
+    {
+      "id": 12,
+      "name": "Synthwave Spice Fusion",
+      "info": "Experience a fusion of flavors! Spicy beef, chorizo, pepper jack cheese, and chipotle aioli on a jalapeño cheddar bun.",
+      "price": 11,
+      "image": "/images/Synthwave Spice Fusion.webp"
+    },
+    {
+      "id": 13,
+      "name": "Mojito Mojo Rhythm",
+      "info": "Get zesty with lime-marinated shrimp, mint aioli, and cucumber slaw on a ciabatta roll.",
+      "price": 13,
+      "image": "/images/Mojito Mojo Rhythm.webp"
+    },
+    {
+      "id": 14,
+      "name": "Beach Bum BBQ",
+      "info": "Kick back and relax with barbecue pulled pork, coleslaw, and crispy onion straws on a brioche bun.",
+      "price": 12,
+      "image": "/images/Beach Bum BBQ Anthem.webp"
+    },
+    {
+      "id": 15,
+      "name": "Cyber Citrus Spark",
+      "info": "A neon blend of sparkling water infused with lime, lemon, and a hint of mint for a refreshing cyberpunk twist.",
+      "price": 5,
+      "image": "/images/Cyber Citrus Spark.webp"
+    },
+    {
+      "id": 16,
+      "name": "Retro Galaxy Soda",
+      "info": "Blast off with this fizzy blue raspberry soda, garnished with a twist of lemon and a sprinkle of edible glitter to bring the galaxy to your glass.",
+      "price": 4,
+      "image": "/images/Retro Galaxy Soda.webp"
+    },
+    {
+      "id": 17,
+      "name": "Pixelated Mango Tango",
+      "info": "A digital delight of mango and pineapple juice, mixed with a touch of coconut water and served with a pixel-shaped ice cube.",
+      "price": 6,
+      "image": "/images/Pixelated Mango Tango.webp"
+    },
+    {
+      "id": 18,
+      "name": "Synthwave Smoothie Blast",
+      "info": "Ride the synthwave with this smoothie blend of strawberries, bananas, and a scoop of vanilla protein, topped with a splash of almond milk.",
+      "price": 7,
+      "image": "/images/Synthwave Smoothie Blast.webp"
+    },
+    {
+      "id": 19,
+      "name": "Electric Blueberry Fusion",
+      "info": "Electrify your taste buds with this vibrant concoction of blueberries, blackberries, and a hint of lime, charged with a touch of sparkling water.",
+      "price": 5,
+      "image": "/images/Electric Blueberry Fusion.webp"
+    },
+    {
+      "id": 20,
+      "name": "Neon Spice Tornado Fries",
+      "info": "Crispy spiral-cut potatoes dusted with a neon blend of spicy seasonings, served with a side of cyber aioli.",
+      "price": 4,
+      "image": "/images/Neon Spice Tornado Fries.webp"
+    },
+    {
+      "id": 21,
+      "name": "Retro Cheese & Bacon Fries",
+      "info": "A throwback to classic flavors with crispy fries topped with melted cheddar, chunks of smoked bacon, and a drizzle of retro ranch dressing.",
+      "price": 5,
+      "image": "/images/Retro Cheese & Bacon Fries.webp"
+    },
+    {
+      "id": 22,
+      "name": "Galactic Sweet Potato Fries",
+      "info": "Sweet potato fries blasted with galactic seasoning and served with a side of starlight BBQ dip.",
+      "price": 4,
+      "image": "/images/Galactic Sweet Potato Fries.webp"
+    },
+    {
+      "id": 23,
+      "name": "Cybernetic Chocolate Explosion",
+      "info": "Decadent chocolate lava cake with a core of molten chocolate, served with a scoop of neon mint ice cream.",
+      "price": 6,
+      "image": "/images/Cybernetic Chocolate Explosion.webp"
+    },
+    {
+      "id": 24,
+      "name": "Retro Raspberry Cheesecake Bites",
+      "info": "Creamy cheesecake bites swirled with raspberry coulis, dusted with powdered sugar, and a sprinkle of retro charm.",
+      "price": 5,
+      "image": "/images/Retro Raspberry Cheesecake Bites.webp"
+    },
+    {
+      "id": 25,
+      "name": "Synthwave Strawberry Sundae",
+      "info": "Layers of strawberry ice cream, fresh strawberries, whipped cream, and a touch of synthwave sparkle, topped with a cherry.",
+      "price": 5,
+      "image": "/images/Synthwave Strawberry Sundae.webp"
+    },
+    {
+      "id": 26,
+      "name": "Electric Pear Crisp",
+      "info": "Warm pear crisp with a electric oat topping, served with a scoop of vanilla ice cream and caramel drizzle.",
+      "price": 6,
+      "image": "/images/Electric Pear Crisp.webp"
+    }
+  ],
+  "orders": []
+}
