@@ -22,11 +22,11 @@ The css file could use a good cleaning, its alot of stuff there thats not necess
 
 For the love of god ALWAYS start with a figma desgin or something like it, makes things much easier.
 
-I stared without it first and well... its a little messy, so ive learned that for sure.
+I stared without it at first and well... its a little messy, so ive learned that for sure.
 
 Structure your css, I just hammered away and created classes right and left, it works but i think it can be structured better (as I mention in the first note)
 
-Also dabbled on a phone version of the app, so some code is only for that which makes it look even more unorganized. So the first 450 lines of code in css file is only for smaller screens. And alot of it is basically copy paste so it is or can be ignored.
+Also dabbled on a phone version of the app, so some code is only for that which makes it look even more unorganized. So the first 450 lines of code in css file is only for smaller screens. And alot of it is basically copy paste so it is or can be ignored. 
 
 ## Improvements
 Account possibility
